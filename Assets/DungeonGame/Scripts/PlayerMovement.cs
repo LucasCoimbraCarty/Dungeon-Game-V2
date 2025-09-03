@@ -8,19 +8,29 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float moveH, moveV;
     public Animator animator;
+    public float speed = 4f;
 
     private void Start()
     {
         //Ao iniciar o jogo, acessa o Rigidbody2D do personagem
         rb = GetComponent<Rigidbody2D>();
     }
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("AAAAAAAAAAAA!");
+            transform.position = new Vector3(0,0,7);
+        }
+    }
 
     private void FixedUpdate()
     {
-              
 
 
+        moveH = Input.GetAxis("Horizontal") * speed;
+        moveV = Input.GetAxis("Vertical") * speed;
+        rb.linearVelocity = new Vector2(moveH, moveV);
         // Responsável por ativar as animações
         animator.SetFloat("Horizontal", moveH);
         animator.SetFloat("Vertical", moveV);
@@ -29,6 +39,5 @@ public class PlayerMovement : MonoBehaviour
         // Vira o personagem baseado no movimento
         transform.localScale = new Vector3(moveH < 0 ? -1 : 1, 1, 1);
     }
-
 
 }

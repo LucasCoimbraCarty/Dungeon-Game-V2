@@ -3480,6 +3480,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2149580471076397868, guid: c05eea1f40f660a40aa29402f93e1246, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1769842718}
+    - targetCorrespondingSourceObject: {fileID: 2149580471076397868, guid: c05eea1f40f660a40aa29402f93e1246, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1769842722}
   m_SourcePrefab: {fileID: 100100000, guid: c05eea1f40f660a40aa29402f93e1246, type: 3}
 --- !u!1 &857836166
 GameObject:
@@ -5853,7 +5856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1510062984
 Transform:
   m_ObjectHideFlags: 0
@@ -6206,6 +6209,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.3333334}
   m_EdgeRadius: 0
+--- !u!114 &1769842722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769842716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ee7a7ee616875449af1e794171f2f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Cleide
+  speed: 1
+  vida: 1
+  MaxVida: 3
+  minVida: 1
+  target: {fileID: 1390919504}
 --- !u!1 &1817306796
 GameObject:
   m_ObjectHideFlags: 0
@@ -6290,6 +6311,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: c9987513481982b4da5422edf0acd5c0, type: 3}
   m_PrefabInstance: {fileID: 1523394866}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1898770377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3234945590249117542, guid: 265d45b7207e2b44e875162f993a82cc, type: 3}
+  m_PrefabInstance: {fileID: 6108850072196497391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1898770382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898770377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4a380d971a05d4ab98585b64ebb4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: 
+  speed: 4
+  vida: 0
+  MaxVida: 0
+  minVida: 0
+  target: {fileID: 1390919504}
 --- !u!1001 &1908771815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6644,6 +6688,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 505494185}
     m_Modifications:
+    - target: {fileID: 520638786824198252, guid: 3306d825df98ffb42a499541057d2a92, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2194752647164877640, guid: 3306d825df98ffb42a499541057d2a92, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6752,7 +6800,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3234945590249117542, guid: 265d45b7207e2b44e875162f993a82cc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1898770382}
   m_SourcePrefab: {fileID: 100100000, guid: 265d45b7207e2b44e875162f993a82cc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
